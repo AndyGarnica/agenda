@@ -48,8 +48,8 @@ var nuevoContacto = function (e) {
 
 var limpiarDatos = function(){
     $("#contacto").val("");
-    $("#telefono").val("")
-}
+    $("#telefono").val("");
+  };
 
 var borrarContacto = function () {
     $(this).parent().remove();
@@ -66,7 +66,7 @@ var validacionNombre = function () {
 
 var validacionTelefono = function () {
     var $numero = $(this);
-    var $enviarDatos = $("#enviarDatos")
+    var $enviarDatos = $("#enviarDatos");
     if ($numero.val().length === 10)
         $enviarDatos.removeAttr("disabled");
     else {
